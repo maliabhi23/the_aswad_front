@@ -13,6 +13,7 @@ export const FetchDataCompo = () => {
       try {
         const res = await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/getTodo`);
         const data = await res.json();
+        console.log(data)
 
         if (res.ok) {
           setTodos(data.data); // Set the fetched todos to state
