@@ -11,7 +11,7 @@ export const FetchDataCompo = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${process.env.REACT_APP_BASE_URL}api/v1/getTodo`);
+        const res = await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/getTodo`);
         const data = await res.json();
 
         if (res.ok) {
